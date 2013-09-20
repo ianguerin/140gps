@@ -1,0 +1,240 @@
+/* collection of sass partials for site - including css reset
+ * @AUTHOR IAN GUERIN IANGUER.IN
+ */
+/* line 17, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* base sass for site - including all variable declarations
+ * @AUTHOR IAN GUERIN IANGUER.IN
+ */
+/* main sass for site
+ * @AUTHOR IAN GUERIN IANGUER.IN
+ */
+/* line 4, ../sass/_main.sass */
+body {
+  background-color: #1e796a;
+  font-family: serif;
+}
+
+/* line 8, ../sass/_main.sass */
+.clear-floats {
+  clear: both;
+}
+
+/* line 11, ../sass/_main.sass */
+#content {
+  margin: 0 auto;
+  width: 600px;
+  background-color: #1e796a;
+  word-wrap: break-word;
+}
+
+/* line 17, ../sass/_main.sass */
+#my-location {
+  display: block;
+  width: 320px;
+  height: 14px;
+  padding-top: 2px;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 27, ../sass/_main.sass */
+#keywords {
+  border: none;
+  font-family: serif;
+  width: 200px;
+  height: 20px;
+  font-size: 15px;
+  color: #006957;
+  padding: 0;
+  margin: 0;
+  float: left;
+  vertical-align: bottom;
+  background-color: #5ed0bd;
+  text-align: center;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+/* line 43, ../sass/_main.sass */
+#get-tweets {
+  border: none;
+  background-color: #ff8d40;
+  color: #a64300;
+  float: left;
+  cursor: pointer;
+  font-size: 15px;
+  width: 110px;
+  height: 17px;
+  text-align: center;
+  padding: 3px 0 0 0;
+  margin: 0 0 0 10px;
+  vertical-align: bottom;
+}
+
+/* line 57, ../sass/_main.sass */
+#tweets {
+  list-style: disc inside;
+}
+/* line 60, ../sass/_main.sass */
+#tweets .error {
+  display: inline-block;
+  background-color: #5ed0bd;
+  color: #e60042;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+}
+/* line 69, ../sass/_main.sass */
+#tweets .tweet {
+  background-color: #5ed0bd;
+  padding: 10px;
+  margin-top: 10px;
+  color: #006957;
+  position: relative;
+}
+/* line 76, ../sass/_main.sass */
+#tweets .tweet a {
+  color: white;
+  text-decoration: none;
+}
+/* line 79, ../sass/_main.sass */
+#tweets .tweet a:hover {
+  text-decoration: underline;
+}
+/* line 82, ../sass/_main.sass */
+#tweets .tweet .avatar {
+  float: left;
+}
+/* line 85, ../sass/_main.sass */
+#tweets .tweet .user {
+  float: left;
+  margin-left: 5px;
+  max-width: 240px;
+  overflow: hidden;
+}
+/* line 91, ../sass/_main.sass */
+#tweets .tweet .user .actual-name {
+  text-decoration: none;
+  font-size: 20px;
+  color: #006957;
+}
+/* line 95, ../sass/_main.sass */
+#tweets .tweet .user .actual-name:hover {
+  text-decoration: underline;
+}
+/* line 98, ../sass/_main.sass */
+#tweets .tweet .user .screen-name {
+  text-decoration: none;
+  color: #1e796a;
+  font-size: 15px;
+}
+/* line 102, ../sass/_main.sass */
+#tweets .tweet .user .screen-name:hover {
+  text-decoration: underline;
+}
+/* line 105, ../sass/_main.sass */
+#tweets .tweet .twitter-logo {
+  width: 30px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+/* line 111, ../sass/_main.sass */
+#tweets .tweet .time-distance {
+  font-size: 10px;
+}
+/* line 114, ../sass/_main.sass */
+#tweets .tweet .time-distance a {
+  color: #006957;
+  text-decoration: none;
+}
+/* line 118, ../sass/_main.sass */
+#tweets .tweet .intents {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+/* line 123, ../sass/_main.sass */
+#tweets .tweet .intents .intent {
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 650px) {
+  /* line 128, ../sass/_main.sass */
+  #content {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 132, ../sass/_main.sass */
+  #content {
+    width: 320px;
+  }
+}
