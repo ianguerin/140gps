@@ -40,6 +40,12 @@ $(document).ready(function(){
     $(this).val(keywords);
   });
 
+  $("#keywords").keyup(function(){
+    $(this).val($(this).val().toLowerCase());
+  });
+
+
+
   $("#tweets").on("mouseover", ".intent, .twitter-logo", function(){
     var source = $(this).attr("src");
     source = source.substring(0, source.length - 4) + "-hover.png";
