@@ -1,3 +1,6 @@
+<?php
+	include_once("phpscripts/connect.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>

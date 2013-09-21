@@ -1,5 +1,6 @@
 <?
-  require("../oauth/twitteroauth.php"); // path to twitteroauth library
+  include_once("connect.php");
+  include_once("twitter-connect.php");
 
   $keywords = $_POST["keywords"];
   $latitude = $_POST["latitude"];
@@ -10,21 +11,19 @@
 
   $keywords_string = "";
   for($i = 0; $i < sizeof($keywords); $i++){
-    if($i+1 == sizeof($keywords)){
+    if($i + 1 == sizeof($keywords)){
       $keywords_string = $keywords_string."".$keywords[$i];
     }else{
       $keywords_string = $keywords_string."".$keywords[$i]."+";
     }
   }
-
-  $consumerkey = '6Z94JqR8PR4xd3tc8j0YSQ';
-  $consumersecret = 'ySEirtK3TqLLLia9PIqqJGuAVQ01dunROpGenyJ0Gf0';
-  $accesstoken = '15400274-qRRjP2Wsa9Wa9bhFupjK3rGJwGOCBwmpX6q1UTDU';
-  $accesstokensecret = '7XO6A1VTLVD0GM8eSEuBZkIyWPtie7rGh6AiXVcd0';
-
-  $twitter = new TwitterOAuth($consumerkey, $consumersecret, $accesstoken, $accesstokensecret);
    
-  $tweets = $twitter->get("https://api.twitter.com/1.1/search/tweets.json?q=".$keywords_string."&lang=en&geocode=".$latitude.",".$longitude.",".$radius."&count=50&result_type=recent");
+  $tweets = $twitter->get("https://api.twitter.com/1.1/search/tweets.json?q="
+    .$keywords_string."&lang=en&geocode=".$latitude.",".$longitude.",".$radius
+    ."&count=50&result_type=recent");
   
   echo json_encode($tweets);
+
+  $con->query("INSERT INTO searches (latitude, longitude, query) VALUES 
+    ('$latitude', '$longitude', '$keywords_string')");
 ?>
