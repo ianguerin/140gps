@@ -66,7 +66,7 @@ $(document).ready(function(){
       return;
     }
     if(myPosition){
-      $.post("scripts/get-tweets.php", {latitude: myPosition.coords.latitude, longitude: myPosition.coords.longitude, keywords: keywords}, function(data){
+      $.post("phpscripts/get-tweets.php", {latitude: myPosition.coords.latitude, longitude: myPosition.coords.longitude, keywords: keywords}, function(data){
         data = $.parseJSON(data);
         var some = false;
         for(var i = 0; i < data["statuses"].length; i++){

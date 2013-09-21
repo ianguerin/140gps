@@ -1,4 +1,4 @@
 # Can ignore specific files
 .DS_Store
 .sass-cache/
-basssass/
+sass/
