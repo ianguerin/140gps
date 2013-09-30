@@ -6,6 +6,7 @@ $(document).ready(function(){
   var myPosition;
   getLocation();
   function getLocation(){
+    $("#my-location").text("finding you...");
     if(navigator.geolocation){
       navigator.geolocation.getCurrentPosition(showPosition, error);
     }else{
@@ -45,6 +46,9 @@ $(document).ready(function(){
   });
 
 
+  $("#locate").on("click", function(){
+    getLocation();
+  });
 
   $("#tweets").on("mouseover", ".intent, .twitter-logo", function(){
     var source = $(this).attr("src");

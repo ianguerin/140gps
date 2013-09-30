@@ -110,7 +110,7 @@ body {
   width: 200px;
   height: 20px;
   font-size: 15px;
-  color: #006957;
+  color: #1e796a;
   padding: 0;
   margin: 0;
   float: left;
@@ -129,7 +129,7 @@ body {
   float: left;
   cursor: pointer;
   font-size: 15px;
-  width: 110px;
+  width: 75px;
   height: 17px;
   text-align: center;
   padding: 3px 0 0 0;
@@ -138,10 +138,25 @@ body {
 }
 
 /* line 57, ../sass/_main.sass */
+#locate {
+  border: none;
+  color: #a64300;
+  float: left;
+  cursor: pointer;
+  font-size: 15px;
+  width: 17px;
+  height: 17px;
+  text-align: center;
+  padding: 2px 0 0 0;
+  margin: 0 0 0 10px;
+  vertical-align: bottom;
+}
+
+/* line 70, ../sass/_main.sass */
 #tweets {
   list-style: disc inside;
 }
-/* line 60, ../sass/_main.sass */
+/* line 73, ../sass/_main.sass */
 #tweets .error {
   display: inline-block;
   background-color: #5ed0bd;
@@ -151,89 +166,89 @@ body {
   margin-top: 10px;
   padding: 10px;
 }
-/* line 69, ../sass/_main.sass */
+/* line 82, ../sass/_main.sass */
 #tweets .tweet {
   background-color: #5ed0bd;
   padding: 10px;
   margin-top: 10px;
-  color: #006957;
+  color: #1e796a;
   position: relative;
 }
-/* line 76, ../sass/_main.sass */
+/* line 89, ../sass/_main.sass */
 #tweets .tweet a {
   color: white;
   text-decoration: none;
 }
-/* line 79, ../sass/_main.sass */
+/* line 92, ../sass/_main.sass */
 #tweets .tweet a:hover {
   text-decoration: underline;
 }
-/* line 82, ../sass/_main.sass */
+/* line 95, ../sass/_main.sass */
 #tweets .tweet .avatar {
   float: left;
 }
-/* line 93, ../sass/_main.sass */
+/* line 106, ../sass/_main.sass */
 #tweets .tweet .user {
   float: left;
   margin-left: 5px;
   max-width: 240px;
   overflow: hidden;
 }
-/* line 99, ../sass/_main.sass */
+/* line 112, ../sass/_main.sass */
 #tweets .tweet .user .actual-name {
   text-decoration: none;
   font-size: 20px;
-  color: #006957;
+  color: #1e796a;
 }
-/* line 103, ../sass/_main.sass */
+/* line 116, ../sass/_main.sass */
 #tweets .tweet .user .actual-name:hover {
   text-decoration: underline;
 }
-/* line 106, ../sass/_main.sass */
+/* line 119, ../sass/_main.sass */
 #tweets .tweet .user .screen-name {
   text-decoration: none;
   color: #1e796a;
   font-size: 15px;
 }
-/* line 110, ../sass/_main.sass */
+/* line 123, ../sass/_main.sass */
 #tweets .tweet .user .screen-name:hover {
   text-decoration: underline;
 }
-/* line 113, ../sass/_main.sass */
+/* line 126, ../sass/_main.sass */
 #tweets .tweet .twitter-logo {
   width: 30px;
   position: absolute;
   top: 5px;
   right: 5px;
 }
-/* line 119, ../sass/_main.sass */
+/* line 132, ../sass/_main.sass */
 #tweets .tweet .time-distance {
   font-size: 10px;
 }
-/* line 122, ../sass/_main.sass */
+/* line 135, ../sass/_main.sass */
 #tweets .tweet .time-distance a {
-  color: #006957;
+  color: #1e796a;
   text-decoration: none;
 }
-/* line 126, ../sass/_main.sass */
+/* line 139, ../sass/_main.sass */
 #tweets .tweet .intents {
   position: absolute;
   bottom: 5px;
   right: 5px;
 }
-/* line 131, ../sass/_main.sass */
+/* line 144, ../sass/_main.sass */
 #tweets .tweet .intents .intent {
   margin-right: 5px;
 }
 
 @media only screen and (max-width: 650px) {
-  /* line 136, ../sass/_main.sass */
+  /* line 149, ../sass/_main.sass */
   #content {
     width: 100%;
   }
 }
 @media only screen and (max-width: 320px) {
-  /* line 140, ../sass/_main.sass */
+  /* line 153, ../sass/_main.sass */
   #content {
     width: 320px;
   }
